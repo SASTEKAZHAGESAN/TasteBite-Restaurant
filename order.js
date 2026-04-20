@@ -18,11 +18,11 @@ document.getElementById("ord1").onclick = function () {
     return;
   }
 
-  // Success message
-  document.getElementById("demo3").innerHTML =
-    "✅ Order placed successfully!<br>" +
-    "Name: " + name + "<br>" +
-    "Food: " + food + "<br>" +
-    "Location: " + address;
+ alert("✅ Order placed successfully!");
+
+document.getElementById("demo3").innerHTML =
+  "Name: " + name + "<br>" +
+  "Food: " + food + "<br>" +
+  "Location: " + address;
 
 };
