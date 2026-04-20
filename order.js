@@ -1,15 +1,28 @@
-function orderFood() {
+// Get button
+document.getElementById("ord1").onclick = function () {
+  
   let name = document.getElementById("name").value;
-  let mobile = document.getElementById("mobile").value;
-  let food = document.getElementById("food").value;
-  let location = document.getElementById("location").value;
+  let mobile = document.getElementById("mobileno").value;
+  let food = document.getElementById("foods1").value;
+  let address = document.getElementById("address1").value;
 
-  if (name === "" || mobile === "" || location === "") {
+  // Validation
+  if (name === "" || mobile === "" || food === "" || address === "") {
     alert("Please fill all fields");
-    return false;
+    return;
   }
 
-  alert("✅ Order placed successfully!");
+  // Mobile number validation (10 digits)
+  if (mobile.length !== 10 || isNaN(mobile)) {
+    alert("Enter valid 10-digit mobile number");
+    return;
+  }
 
-  return false; // stop page reload
-}
+  // Success message
+  document.getElementById("demo3").innerHTML =
+    "✅ Order placed successfully!<br>" +
+    "Name: " + name + "<br>" +
+    "Food: " + food + "<br>" +
+    "Location: " + address;
+
+};
