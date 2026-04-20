@@ -1,4 +1,4 @@
-alert("NEW JS LOADED");
+
 document.getElementById("ord1").onclick = function () {
   
   let name = document.getElementById("name").value;
