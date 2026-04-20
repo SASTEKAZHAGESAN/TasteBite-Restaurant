@@ -18,8 +18,7 @@ document.getElementById("ord1").onclick = function () {
     return;
   }
 
- alert("✅ Order placed successfully!");
-
+alert("✅ Order placed successfully!");
 document.getElementById("demo3").innerHTML =
   "Name: " + name + "<br>" +
   "Food: " + food + "<br>" +
