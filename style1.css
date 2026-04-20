@@ -1,0 +1,48 @@
+/* .-> class
+# -> id 
+
+*/
+
+
+
+h1{
+    text-align: center;
+    color: rgb(179, 39, 114);
+    font-weight: bold;
+    font-size: 30px;
+}
+#items
+{
+    text-align: center;
+    color:black;
+}
+#b1,#b2,#b3,#b4,#b5,#b6
+{
+    margin-right: 10px;
+}
+
+#ord1{
+    font-size: 20px;
+}
+
+#burgers1, #pizzas1, #drinks1 ,#desserts1, #snacks1,#combos1 {
+  display: none;
+}
+
+#burgers1 img, #pizzas1 img, #drinks1 img,#desserts1 img, #snacks1 img, #combos1 img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+
+}
+.burgers, .pizzas, .drinks, .desserts, .snacks, .combos {
+    display: flex;         
+    align-items: center;    
+    gap: 20px;              
+    margin-bottom: 20px;    
+}
+
+#foods1{
+    color: rgb(3, 3, 3);
+}
+
