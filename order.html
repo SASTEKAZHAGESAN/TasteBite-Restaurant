@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Food</title>
+
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+<h1 style="color:blueviolet;">Order Your Food</h1>
+
+<label>Name</label>
+<input type="text" id="name" placeholder="Enter Your Name">
+<br><br>
+
+<label>Mobile Number</label>
+<input type="tel" id="mobileno" placeholder="Enter Mobile Number">
+<br><br>
+
+<label>Foods</label>
+
+<select id="foods1">
+
+<option value="">Select Your Food</option>
+
+<option value="Veggie Cheese Burger">Veggie Cheese Burger</option>
+<option value="Large Chicken Burger">Large Chicken Burger</option>
+<option value="Peri Peri Burger">Peri Peri Burger</option>
+
+<option value="Cheesy Pizza">Cheesy Pizza</option>
+<option value="Chicken Pizza">Chicken Pizza</option>
+<option value="Peri Peri Pizza">Peri Peri Pizza</option>
+
+<option value="Mojito">Mojito</option>
+<option value="Strawberry Milkshake">Strawberry Milkshake</option>
+<option value="Kitkat MilkShake">Kitkat MilkShake</option>
+
+</select>
+
+<br><br>
+
+<label>Price</label>
+<input type="text" id="price" readonly>
+
+<br><br>
+
+<label>Quantity</label>
+
+<select id="quantity">
+
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+
+</select>
+
+<br><br>
+
+<h2>
+
+Total Amount :
+₹<span id="total">0</span>
+
+</h2>
+
+<br>
+
+<label>Location</label>
+
+<textarea
+id="address1"
+placeholder="Enter Delivery Address"></textarea>
+
+<br><br>
+
+<button id="ord1">
+
+Order Now
+
+</button>
+
+<br><br>
+
+<h3 id="demo3"></h3>
+
+<script src="order.js"></script>
+
+</body>
+</html>
